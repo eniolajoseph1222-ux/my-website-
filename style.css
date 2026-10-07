@@ -208,29 +208,38 @@ footer {
 @media (max-width: 768px) {
 
     nav {
+        padding: 15px 5%;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     .nav-links {
-        gap: 12px;
+        gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
     }
 
     .hero {
         flex-direction: column-reverse;
         text-align: center;
-        padding-top: 50px;
+        padding: 50px 5%;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .hero-image img {
-        width: 230px;
-        height: 230px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-text > p:not(.tag) {
+        font-size: 16px;
     }
 
     .buttons {
@@ -238,7 +247,20 @@ footer {
         flex-wrap: wrap;
     }
 
+    section {
+        padding: 60px 5%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
